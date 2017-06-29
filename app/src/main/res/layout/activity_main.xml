@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.edittextsignup.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="376dp"
+        android:layout_height="505dp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="3dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="casual"
+            android:text="Name"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_dark"
+            android:textSize="22sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/nameedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nameedit"
+            android:layout_below="@+id/nameedit"
+            android:layout_marginTop="26dp"
+            android:fontFamily="casual"
+            android:text="E-mail"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="casual"
+            android:text="Password"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/emailedit"
+            android:layout_alignStart="@+id/emailedit" />
+
+        <EditText
+            android:id="@+id/emailedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/passwordedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/password"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_below="@+id/passwordedit"
+            android:layout_marginTop="15dp"
+            android:fontFamily="casual"
+            android:text="I am "
+            android:textColor="@android:color/black"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignEnd="@+id/passwordedit"
+            android:onClick="femaleclick"
+            android:text="Female"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/female"
+            android:layout_toEndOf="@+id/button"
+            android:onClick="maleclick"
+            android:text="Male"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/password"
+            android:onClick="buttonclick"
+            android:text="Sign Up"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

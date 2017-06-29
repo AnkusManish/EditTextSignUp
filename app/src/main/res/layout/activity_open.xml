@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.edittextsignup.OpenActivity">
+
+    <RelativeLayout
+        android:layout_width="376dp"
+        android:layout_height="508dp"
+        android:layout_marginRight="4dp"
+        android:background="?attr/colorButtonNormal"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="41dp"
+            android:text="Welcome"
+            android:textColor="@android:style/Theme.Black"
+            android:textSize="40sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/nameedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/passwordedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nameedit"
+            android:layout_below="@+id/nameedit"
+            android:layout_marginTop="140dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="Password"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/emailedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nameedit"
+            android:layout_below="@+id/nameedit"
+            android:layout_marginTop="42dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="E-mail"
+            android:textSize="25sp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
